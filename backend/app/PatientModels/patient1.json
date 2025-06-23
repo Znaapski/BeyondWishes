@@ -1,0 +1,13 @@
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "picture": "",
+  "birthdate": "2000-10-04",
+  "sex": "male",
+  "relatives": [
+    {"first_name": "didier", "last_name": "raoult", "relation": "parent", "email": "dr@gmail.com", "phone_number": "0462283826"}
+  ],
+  "diagnosis": "Cancer in brain",
+  "prognosis": "3 months to live",
+  "wish": "string"
+}

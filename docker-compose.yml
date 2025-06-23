@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  couchdb:
+    image: couchdb:3.3.3
+    environment:
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: password
+    volumes:
+      - 'couchdata:/var/lib/couchdb/data'
+      - './couchdb/local.ini:/opt/couchdb/etc/local.ini'
+    ports:
+      - "5984:5984"
+  
+  backend:
+    build: ./backend
+    volumes:
+     - './backend/app/:/code/app'
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+    depends_on:
+      - couchdb
+    ports:
+      - "80:80"
+  
+  mailbox:
+    image: mailhog/mailhog:latest
+    restart: always
+    ports:
+      - 1025:1025
+      - 8025:8025
+
+volumes:
+  couchdata:

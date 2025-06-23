@@ -1,0 +1,14 @@
+{
+  "first_name": "Jane",
+  "last_name": "Smith",
+  "picture": "profile.jpg",
+  "birthdate": "2000-10-04",
+  "sex": "female",
+  "relatives": [
+    {"first_name": "David", "last_name": "Smith", "relation": "spouse", "email": "david.smith@example.com", "phone_number": "1234567890"},
+    {"first_name": "Emily", "last_name": "Smith", "relation": "child", "email": "emily.smith@example.com", "phone_number": "9876543210"}
+  ],
+  "diagnosis": "Colon cancer",
+  "prognosis": "8 months",
+  "wish": "To travel the world"
+}

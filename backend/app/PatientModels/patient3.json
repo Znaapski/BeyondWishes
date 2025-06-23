@@ -1,0 +1,14 @@
+{
+  "first_name": "Michael",
+  "last_name": "Johnson",
+  "picture": "profile.png",
+  "birthdate": "2000-10-04",
+  "sex": "male",
+  "relatives": [
+    {"first_name": "Sarah", "last_name": "Johnson", "relation": "spouse", "email": "sarah.johnson@example.com", "phone_number": "1234567890"},
+    {"first_name": "Jacob", "last_name": "Johnson", "relation": "child", "email": "jacob.johnson@example.com", "phone_number": "9876543210"}
+  ],
+  "diagnosis": "Heart cancer",
+  "prognosis": "2 days",
+  "wish": "To spend time with family"
+}
